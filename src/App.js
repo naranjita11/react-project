@@ -1,14 +1,12 @@
 // import logo from './logo.svg';
 // this makes it clear that they are components
-import Header from "./Components/Header";
-import Paragraph from "./Components/Paragraph";
+import Stuff from "./Components/Stuff";
 import './App.css';
 
-const App = () => (
-  <>
-    <Header />
-    <Paragraph />
-  </>
-);
+const App = () => {
+    return (
+      <Stuff />
+    );  
+}
 
 export default App;
