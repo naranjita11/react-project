@@ -1,11 +1,18 @@
-const divStyle = {
-    backgroundColor: 'red',
-    width: 200,
-    height: 200,
-  };
+// import { PropTypes } from 'prop-types';
 
-const Square = () => (
-    <div style={divStyle}></div>
+const divStyle = {
+  width: 200,
+  height: 200,
+};
+
+const Square = ({ colour }) => (
+    <div style={{ ...divStyle, backgroundColor: colour }}></div>
 );
+
+// add default values for the color prop
+// if the prop is not given this will be used
+Square.defaultProps = {
+  colour: "grey",
+};
 
 export default Square;

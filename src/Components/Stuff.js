@@ -6,8 +6,8 @@ import People from "./People";
 const Stuff = () => (
     <>
         <Header title="My Amazing App" subtitle="Is really amazing!"/>
-        <Paragraph />
-        <Square />
+        <Paragraph message="Another message"/>
+        <Square colour="yellow"/>
         <People/>
     </>
 );
