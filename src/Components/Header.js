@@ -1,9 +1,10 @@
 // we use className to add classes for Bootstrap styling
-const Header = () => (
-    <header class="jumbotron">
-      <h1>Hello, world!</h1>
-      <p>It's actually amazing</p>
-    </header>
-  );
+
+const Header = ({ title, subtitle }) => (
+  <header class="jumbotron">
+  <h1>{ title }</h1>
+  <p>{ subtitle }</p>
+</header>
+);
   
   export default Header;
