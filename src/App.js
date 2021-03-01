@@ -1,25 +1,14 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+// this makes it clear that they are components
+import Header from "./Components/Header";
+import Paragraph from "./Components/Paragraph";
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const App = () => (
+  <>
+    <Header />
+    <Paragraph />
+  </>
+);
 
 export default App;
