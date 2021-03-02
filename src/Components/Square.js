@@ -6,7 +6,8 @@ const divStyle = {
 };
 
 const Square = ({ colour }) => (
-    <div style={{ ...divStyle, backgroundColor: colour }}></div>
+  // use of spreading. Could have brought all of divStly properties within the function with explicit return
+  <div style={{ ...divStyle, backgroundColor: colour }}></div>
 );
 
 // add default values for the color prop

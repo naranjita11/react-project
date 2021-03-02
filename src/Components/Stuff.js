@@ -5,11 +5,17 @@ import People from "./People";
 
 const Stuff = ({ square }) => (
     <>
-        <Header title="Fantastic App" subtitle="Is really amazing!" />
-        <Paragraph message="Vultures vultures everywhere" />
+        <Header> 
+            <h3>Fantastic App</h3>
+            <h4>Is really amazing!</h4>    
+        </Header>
 
-        { square ? <Square colour="yellow" /> : null }
-        
+        <Paragraph>
+            <p>Vultures vultures everywhere</p>
+        </Paragraph>
+
+        { square ? <Square colour="violet" /> : null }
+
         <People names={ ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"] } />
     </>
 );
