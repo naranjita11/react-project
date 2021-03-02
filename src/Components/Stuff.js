@@ -4,6 +4,7 @@ import Square from "./Square";
 import People from "./People";
 import Clicked from "./Clicked";
 import ToggleText from "./ToggleText";
+import Counter from "./Counter";
 
 const Stuff = () => (
     <>
@@ -23,6 +24,8 @@ const Stuff = () => (
         <Clicked />
 
         <ToggleText />
+
+        <Counter initial={ 50 } max={ 100 } />
     </>
 );
 
