@@ -4,7 +4,7 @@ import Square from "./Square";
 import People from "./People";
 import Clicked from "./Clicked";
 
-const Stuff = ({ square }) => (
+const Stuff = () => (
     <>
         <Header> 
             <h3>Fantastic App</h3>
@@ -12,10 +12,10 @@ const Stuff = ({ square }) => (
         </Header>
 
         <Paragraph>
-            <p>Vultures vultures everywhere</p>
+            <p>Hello hello</p>
         </Paragraph>
 
-        { square ? <Square colour="hotpink" /> : null }
+        <Square colour="hotpink"/>
 
         <People names={ ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"] } />
 
@@ -23,8 +23,8 @@ const Stuff = ({ square }) => (
     </>
 );
 
-Stuff.defaultProps = {
-    square: true,
-};
+// Stuff.defaultProps = {
+//     square: true,
+// };
 
 export default Stuff;

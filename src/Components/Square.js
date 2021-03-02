@@ -1,17 +1,45 @@
-// import { PropTypes } from 'prop-types';
+import { Component } from "react";
 
-const divStyle = {
-  width: 200,
-  height: 200,
+class Square extends Component {
+
+    constructor(props) {
+          
+        super(props);
+
+        this.state = {
+          green: true,
+        };
+
+        this.handleClick = this.handleClick.bind(this);
+    }
+
+    handleClick() {
+        // get current value of clicked. Not necessary in this case but will be needed to toggle
+        let isToggled = this.state.green;
+
+        // set new value
+        // pass in a POJO with values we want to update
+        this.setState({ green: !isToggled});
+
+    }
+
+    render() {
+      let colour = this.state.green ? "green" : this.props.colour;  
+      
+      const divStyle = {
+            width: 200,
+            height: 200,
+            backgroundColor: colour
+        };
+
+        return (
+            <div style={divStyle} onClick={ this.handleClick } />
+        );
+
+    }
+
 };
 
-const Square = ({ colour }) => (
-  // use of spreading. Could have brought all of divStly properties within the function with explicit return
-  <div style={{ ...divStyle, backgroundColor: colour }}></div>
-);
-
-// add default values for the color prop
-// if the prop is not given this will be used
 Square.defaultProps = {
   colour: "grey",
 };
