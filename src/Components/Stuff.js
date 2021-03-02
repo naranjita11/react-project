@@ -3,6 +3,7 @@ import Paragraph from "./Paragraph";
 import Square from "./Square";
 import People from "./People";
 import Clicked from "./Clicked";
+import ToggleText from "./ToggleText";
 
 const Stuff = () => (
     <>
@@ -20,6 +21,8 @@ const Stuff = () => (
         <People names={ ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"] } />
 
         <Clicked />
+
+        <ToggleText />
     </>
 );
 
