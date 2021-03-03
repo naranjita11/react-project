@@ -6,24 +6,23 @@ class ToggleText extends Component {
         super(props);
 
         this.state = {
-            initial: true,
+            initial: true
         };
 
         this.handleClick = this.handleClick.bind(this);
     }
 
     handleClick() {
-        let isToggled = this.state.initial;
-        this.setState({ initial: !isToggled });
-
+        this.setState({ initial: !this.state.initial });
     }
 
     render() {
+        let { initial, alternate } = this.props;
         
         return (
           <>
           <button onClick={ this.handleClick }>Toggle</button>
-          <p>{ this.state.initial ? "Hello" : "World" }</p>
+          <p>{ this.state.initial ? initial : alternate }</p>
           </>
         );
 

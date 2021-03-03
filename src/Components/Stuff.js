@@ -23,7 +23,7 @@ const Stuff = () => (
 
         <Clicked />
 
-        <ToggleText />
+        <ToggleText initial="Hello" alternate="World"/>
 
         <Counter initial={ 50 } max={ 100 } />
     </>
