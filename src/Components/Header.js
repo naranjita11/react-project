@@ -9,7 +9,7 @@ class Header extends Component {
 
       // the return statement of the render method is same as in original function
       return (
-        <header class="jumbotron">
+        <header className="jumbotron">
           <h1>{ children }</h1>
           <p>{ subtitle }</p>
         </header> 
@@ -17,13 +17,5 @@ class Header extends Component {
     }
 
 }
-
-// the original functional component
-// const Header = ({ children, subtitle }) => (
-//   <header className="jumbotron">
-//     <h1>{ children }</h1>
-//     <p>{ subtitle }</p>
-//   </header>
-// );
 
   export default Header;

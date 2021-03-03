@@ -11,13 +11,13 @@ import PasswordStrength from "./PasswordStrength";
 
 const Stuff = () => (
     <>
-        <Header> 
-            <h3>Fantastic App</h3>
-            <h4>Is really amazing!</h4>    
+        <Header subtitle="This subtitle is a prop"> 
+            <p>Fantastic App</p>
+            <p>Is really amazing!</p>    
         </Header>
 
         <Paragraph>
-            <p>Hello hello</p>
+            Hello hello paragraph
         </Paragraph>
 
         <Square colour="hotpink"/>
