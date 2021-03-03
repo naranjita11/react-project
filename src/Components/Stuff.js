@@ -7,6 +7,7 @@ import ToggleText from "./ToggleText";
 import Counter from "./Counter";
 // import StepCounter from "./StepCounter";
 import Length from "./Length";
+import PasswordStrength from "./PasswordStrength";
 
 const Stuff = () => (
     <>
@@ -32,6 +33,8 @@ const Stuff = () => (
         {/* <StepCounter max={ 100 } step={ 5 } /> */}
 
         <Length label="How long?"/>
+
+        <PasswordStrength name="password" label="Password: Is it secure?"/>
     </>
 );
 
