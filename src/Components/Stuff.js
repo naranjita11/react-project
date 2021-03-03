@@ -5,6 +5,8 @@ import People from "./People";
 import Clicked from "./Clicked";
 import ToggleText from "./ToggleText";
 import Counter from "./Counter";
+// import StepCounter from "./StepCounter";
+import Length from "./Length";
 
 const Stuff = () => (
     <>
@@ -26,6 +28,10 @@ const Stuff = () => (
         <ToggleText initial="Hello" alternate="World"/>
 
         <Counter initial={ 50 } max={ 100 } />
+
+        {/* <StepCounter max={ 100 } step={ 5 } /> */}
+
+        <Length label="How long?"/>
     </>
 );
 
