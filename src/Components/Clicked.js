@@ -20,7 +20,8 @@ class Clicked extends Component {
         // let current = this.state.clicked;
     
         // set new value
-        // pass in a POJO with values we want to update
+        // .setState is a method inherited from the Component class
+        // pass in a plain old JS object with values we want to update
         this.setState({ clicked: true});
       }
 
@@ -28,8 +29,8 @@ class Clicked extends Component {
 
         return (
             <div style={{ backgroundColor: "hotpink" }} onClick={ this.handleClick }>
-            { /* use the state - will use the inital state the first time */ }
-            <p>{ this.state.clicked ? "clicked" : "Not clicked"}</p>
+                { /* use the state - will use the inital state the first time */ }
+                <p>{ this.state.clicked ? "clicked" : "Not clicked"}</p>
             </div>
         );
     }

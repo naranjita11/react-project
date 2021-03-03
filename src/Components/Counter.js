@@ -7,6 +7,7 @@ class Counter extends Component {
         super(props);
 
         this.state = {
+            // if a props value is an inital value that will change, set in this.state
             number: this.props.initial,
         };
 
