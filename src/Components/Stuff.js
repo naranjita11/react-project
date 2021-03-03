@@ -8,6 +8,7 @@ import Counter from "./Counter";
 // import StepCounter from "./StepCounter";
 import Length from "./Length";
 import PasswordStrength from "./PasswordStrength";
+import TempConverter from "./TempConverter";
 
 const Stuff = () => (
     <>
@@ -34,7 +35,9 @@ const Stuff = () => (
 
         <Length label="How long?"/>
 
-        <PasswordStrength name="password" label="Password: Is it secure?"/>
+        <PasswordStrength name="password" label="Is it secure?"/>
+        
+        <TempConverter label="Temperature Converter"/>
     </>
 );
 
