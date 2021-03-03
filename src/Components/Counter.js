@@ -39,6 +39,7 @@ class Counter extends Component {
 
         return (
           <>
+          <h4>Counter</h4>
           <button onClick={ this.handleClickUp }>+</button>
           <p>{ number }</p>
           <button onClick={ this.handleClickDown }>-</button>

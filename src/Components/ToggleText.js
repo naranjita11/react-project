@@ -21,6 +21,7 @@ class ToggleText extends Component {
         
         return (
           <>
+          <h4>Toggle Your Text!</h4>
           <button onClick={ this.handleClick }>Toggle</button>
           <p>{ this.state.initial ? initial : alternate }</p>
           </>

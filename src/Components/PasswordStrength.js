@@ -45,6 +45,7 @@ class PasswordStrength extends Component {
 
         return (
             <div className="form-group">
+                <h4>Password Strength</h4>
                 <label>{ this.props.label }</label>
                 <input
                     onChange={ this.handleChange }

@@ -27,6 +27,7 @@ class Length extends Component {
 
         return (
             <div className="form-group">
+                <h4>Length of Input</h4>
                 <label>{ this.props.label }</label>
 
                 { /* use the value of the state */ }
