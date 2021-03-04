@@ -24,14 +24,16 @@ class GodCounter extends Component {
         this.setState({ value2: value2 + 1 });
     }
 
+    // this is run directly after initial render so effectively displays the combined value of value1 and value2 in the doc title on load
     componentDidMount() {
         let { value1 } = this.state;
         let { value2 } = this.state;
         document.title = value1 + value2;
         }
 
+    // this unmounts the above
     componentWillUnmount() {
-        document.title = null;
+        document.title = "React App";
         console.log("unmount")
         }
 
