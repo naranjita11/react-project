@@ -10,34 +10,28 @@ class GodCounter extends Component {
         };
 
         this.handleClick = this.handleClick.bind(this);
-        console.log("Construct");
     }
 
     handleClick() {
         // destructuring the state object
         let { number } = this.state
 
-        this.setState({ number: number + 1 });
-        console.log("Click");
-
+        this.setState({ number: number + 1 })
     }
 
     componentDidMount() {
         window.addEventListener("click", this.handleClick);
-        console.log("Mount");
         }
 
     componentWillUnmount() {
         // we need to remove any event listeners
         // that React hasn't setup itself
         window.removeEventListener("click", this.handleClick);
-        console.log("Unmount");
         }
 
     render() {
         // destructuring the state object
         let { number } = this.state
-        console.log("Render");
 
         return (
           <>
