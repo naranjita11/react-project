@@ -10,6 +10,8 @@ import Length from "./Length";
 import PasswordStrength from "./PasswordStrength";
 import TempConverter from "./TempConverter";
 import List from "./List";
+import GodCounter from "./GodCounter";
+import TwoCounters from "./TwoCounters";
 
 const Stuff = () => (
     <>
@@ -41,6 +43,10 @@ const Stuff = () => (
         <TempConverter label="Temperature Converter"/>
 
         <List />
+
+        <GodCounter />
+
+        <TwoCounters />
     </>
 );
 
