@@ -17,12 +17,10 @@ class PasswordStrength extends Component {
         // e.currentTarget: DOM element we attached the event handler to
         // use the value property to read its current value
         this.setState({ input: e.target.value });
-        console.log(e.target.value);
     }
 
     findColour() {
         let { length } = this.state.input
-        console.log(length);
 
         if (length < 1) {
             return "white";

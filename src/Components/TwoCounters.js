@@ -37,6 +37,7 @@ class GodCounter extends Component {
         console.log("unmount")
         }
 
+    // seeing as this method and DidMount use the same code, could pull it ouot into a separate method and call that method in DidMount and DidUpdate
     componentDidUpdate() {
         let { value1 } = this.state;
         let { value2 } = this.state;
@@ -49,6 +50,7 @@ class GodCounter extends Component {
 
         return (
             <div className="jumbotron">
+                <h4>Two Counters</h4>
                 <p>
                     <button onClick={ this.handle1 } className="btn btn-lg btn-danger">+</button>
                     <span className="alert alert-danger mr-2 ml-2">{ value1 }</span>
