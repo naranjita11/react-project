@@ -26,6 +26,7 @@ class List extends Component {
         this.setState({
             // but won't this clear the contents of value? I can see that you need to do this after submitting it to the array...
             value: "", 
+            // use of spread notation (spread operator?) to create new array with existing array. Creates a new array rather than mutates the old one
             items: [...this.state.items, this.state.value],
         });
     }
