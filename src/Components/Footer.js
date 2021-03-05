@@ -23,6 +23,9 @@ class Footer extends Component {
             <Link to="/list">List</Link>
           </li>
           <li>
+            <Link to="/adder">Adder</Link>
+          </li>
+          <li>
             <Link to="/god-counter">God Counter</Link>
           </li>
           <li>

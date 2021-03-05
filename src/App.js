@@ -4,6 +4,7 @@ import './App.css';
 import Header from "./Components/Header";
 import Clicked from "./Components/Clicked";
 import List from "./Components/List";
+import Adder from "./Components/Adder";
 import GodCounter from "./Components/GodCounter";
 import Square from "./Components/Square";
 import People from "./Components/People";
@@ -30,6 +31,10 @@ const App = () => (
           
           <Route exact path="/list">
             <List />
+          </Route>
+
+          <Route exact path="/adder">
+            <Adder />
           </Route>
           
           <Route exact path="/god-counter">
