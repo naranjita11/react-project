@@ -32,6 +32,9 @@ class Footer extends Component {
             <Link to="/temp-converter">Temperature Converter</Link>
           </li>
           <li>
+            <Link to="/steps/:max/:step">Step Counter</Link>
+          </li>
+          <li>
             <Link to="/two-counters">Two Counters</Link>
           </li>
         </ul>

@@ -22,9 +22,12 @@ class StepCounter extends Component {
         let { max } = this.props
         let { step } = this.props
 
+        // + infront of step means read it as a number (type coercion)
         if (number < max) {
-            this.setState({ number: number + step });
+            this.setState({ number: number + +step });
         }
+        // this is useful to find out what type JS thinks the variable is
+        console.log(typeof step);
     }
 
     handleClickDown() {

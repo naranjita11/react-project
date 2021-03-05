@@ -9,6 +9,7 @@ import Square from "./Components/Square";
 import People from "./Components/People";
 import Footer from "./Components/Footer";
 import ToggleText from "./Components/ToggleText";
+import StepCounter from "./Components/StepCounter";
 import TwoCounters from "./Components/TwoCounters";
 import TempConverter from "./Components/TempConverter";
 import FourOhFour from "./FourOhFour";
@@ -47,6 +48,10 @@ const App = () => (
             <ToggleText initial="such" alternate="fun"/>
           </Route>
 
+          <Route exact path="/steps/:max/:step" render={ ({ match }) => (
+            <StepCounter max={ match.params.max } step={ match.params.step } />
+          ) } />
+          
           <Route exact path="/two-counters">
             <TwoCounters />
           </Route>
