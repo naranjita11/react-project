@@ -17,7 +17,7 @@ class Footer extends Component {
             <Link to="/people">People</Link>
           </li>
           <li>
-            <Link to="/square">Square</Link>
+            <Link to="/square/:colour">Square</Link>
           </li>
           <li>
             <Link to="/list">List</Link>

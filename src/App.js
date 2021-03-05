@@ -35,9 +35,9 @@ const App = () => (
             <GodCounter />
           </Route>
 
-          <Route exact path="/square">
-            <Square colour="hotpink"/>
-          </Route>
+          <Route exact path="/square/:colour" render={ ({ match }) => (
+            <Square colour={ match.params.colour } />
+          ) } />
 
           <Route exact path="/people">
             <People names={ ["James P. Sullivan", "Mike Wazowski", "Boo", "Randall Boggs", "Roz", "Fungus"] } />

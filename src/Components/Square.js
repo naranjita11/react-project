@@ -18,7 +18,7 @@ class Square extends Component {
         let isToggled = this.state.green;
 
         // set new value
-        // pass in a POJO with values we want to update
+        // pass in a plain old JS object with values we want to update
         this.setState({ green: !isToggled});
 
     }
